@@ -1,17 +1,22 @@
 import "bootstrap/dist/css/bootstrap.min.css"
 import './App.css'
-import NavbarMain from "./components/NavbarMain.jsx";
+import Pippo from "./components/Nav2.jsx";
+import SubNav from "./components/SubNav.jsx";
+import {BrowserRouter} from "react-router-dom";
 import {useState} from "react";
+
+// import CityInfo from "./components/CityInfo.jsx";
 
 
 function App() {
-    const [show, setResult] = useState(false)
-
     return (
-        <div>
-            <NavbarMain/>
+        <BrowserRouter>
+            <div className={"d-flex flex-column"}>
+                <Pippo/>
+                <SubNav/>
 
-        </div>
+            </div>
+        </BrowserRouter>
     )
 }
 
